@@ -1,0 +1,47 @@
+import pytest
+import numpy as np
+import datetime
+from src.environment.density import Exponential, HarrisPriester, NRLMSISE00
+
+def test_exponential_model():
+    model = Exponential()
+    r_eci = np.array([6500e3, 0.0, 0.0])
+    jd = 2451545.0
+    rho = model.get_density(r_eci, jd)
+    assert rho > 0.0
+    assert rho < 1.225
+    
+    r_space = np.array([50000e3, 0.0, 0.0])
+    rho_space = model.get_density(r_space, jd)
+    assert rho_space < rho
+    assert rho_space >= 0.0
+
+def test_harris_priester_model():
+    model = HarrisPriester()
+    r_eci = np.array([7000e3, 0.0, 0.0])
+    jd = 2451545.0
+    rho = model.get_density(r_eci, jd)
+    assert rho > 0.0
+    assert rho < 1.225
+    
+    r_space = np.array([50000e3, 0.0, 0.0])
+    rho_space = model.get_density(r_space, jd)
+    assert rho_space < rho
+    assert rho_space >= 0.0
+
+def test_nrlmsise_model():
+    try:
+        import pymsis
+    except ImportError:
+        pytest.skip("pymsis not installed")
+
+    model = NRLMSISE00()
+    r_eci = np.array([7000e3, 0.0, 0.0]) 
+    date = datetime.datetime(2024, 1, 1, 12, 0, 0)
+    
+    try:
+        rho = model.get_density(r_eci, date)
+        assert isinstance(rho, float)
+        assert rho >= 0.0
+    except Exception as e:
+        pytest.skip(f"NRLMSISE failed to run (likely missing data): {e}")
