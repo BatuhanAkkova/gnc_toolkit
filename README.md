@@ -34,8 +34,18 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 - **TRIAD**: Deterministic method using two vectors.
 - **QUEST**: Deterministic method using multiple vectors.
 
-### C++ Library
-- High-performance implementations of estimation filters (KF, EKF, MEKF) utilizing the Eigen library.
+### Sensors & Actuators
+- **Sensors**: Base framework with implementations for:
+    - **Star Tracker**: Quaternion output with noise and bias models.
+    - **Sun Sensor**: Vector measurement with field-of-view and noise.
+    - **Magnetometer**: Magnetic field vector measurement with bias and scaling.
+    - **Gyroscope**: Angular rate measurement with bias instability (Random Walk).
+- **Actuators**: Base framework with implementations for:
+    - **Reaction Wheels**: Torque command with speed/momentum saturation.
+    - **Magnetorquers**: Dipole command with saturation.
+    - **Thrusters**:
+        - **Chemical**: PWM logic for analyzing on-time vs average thrust, minimum impulse bit enforcement.
+        - **Electric**: Power consumption modeling based on efficiency and Isp.
 
 ## TODO
 
@@ -69,14 +79,3 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 - [ ] Intercept & Rendezvous
     - [ ] Lambert Problem
     - [ ] CW eqs (Hill's equations, linearized relative motion)
-
-### Actuator & Sensor Models
-- [ ] Sensors
-    - [ ] Star Tracker
-    - [ ] Sun Sensor
-    - [ ] Magnetometer
-    - [ ] Gyroscope
-- [ ] Actuators
-    - [ ] RWs
-    - [ ] MTQs
-    - [ ] Thrusters (PWM logic for on/off thrusters)
