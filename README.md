@@ -88,11 +88,11 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
         - **Chemical**: PWM logic for analyzing on-time vs average thrust, minimum impulse bit enforcement.
         - **Electric**: Power consumption modeling based on efficiency and Isp.
 
-## TODO
-
 ### Propagators
-- [ ] Cowell method (Integrate eqs of motion with disturbances)
-- [ ] Fix kepler propagator
+- **Two-Body**: Two-body orbit propagation.
+- **Cowell**: Numerical integration of equations of motion with disturbances.
+
+## TODO
 
 ### Attitude Dynamics
 - [ ] Rigid body euler equations
