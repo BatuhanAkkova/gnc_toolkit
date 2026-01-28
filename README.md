@@ -95,6 +95,10 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 ### Attitude Dynamics
 - **Rigid Body**: Euler equations for rigid body motion.
 
+### Guidance & Mission Analysis Tools
+- **Orbital Maneuvers**: Hohmann transfer, bi-elliptic transfer, phasing manouvers, plane change, combined plane change.
+- **Rendezvous**: Lambert problem, CW equations, CW targeting.
+
 ## TODO
 
 ### Classical Control Algorithms
@@ -110,13 +114,3 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 
 ### C++ Library
 - [ ] Develop cpp library further
-
-### Guidance & Mission Analysis Tools
-- [ ] Orbital Manouvers
-    - [ ] Hohmann Transfer
-    - [ ] Bi-Elliptic Transfer
-    - [ ] Phasing Manouvers
-    - [ ] Plane change manouvers
-- [ ] Intercept & Rendezvous
-    - [ ] Lambert Problem
-    - [ ] CW eqs (Hill's equations, linearized relative motion)
