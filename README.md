@@ -113,3 +113,7 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 
 ## TODO
 **Simulation**
+
+## Author
+**Batuhan Akkova**
+[Email](mailto:batuhanakkova1@gmail.com)
