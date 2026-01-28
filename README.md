@@ -1,6 +1,6 @@
 # GNC Toolkit
 
-A comprehensive Guidance, Navigation, and Control (GNC) toolkit for satellite simulation and estimation. This project provides high-fidelity environment models, disturbance calculations, and advanced estimation algorithms in both Python and C++.
+A comprehensive Guidance, Navigation, and Control (GNC) toolkit for satellite simulation and estimation. This project provides high-fidelity environment models, disturbance calculations, and advanced estimation algorithms in Python.
 
 ## Getting Started
 
@@ -110,6 +110,3 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 - [ ] Sliding mode controller
 - [ ] MPC
 - [ ] Feedback Linearization (cancel out non-linear terms)
-
-### C++ Library
-- [ ] Develop cpp library further
