@@ -103,10 +103,13 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 - **PID**: Proportional-Integral-Derivative controller.
 - **B-dot**: Magnetic detumbling controller.
 
-## TODO
 ### Optimal Control Algorithms
-- [ ] LQR controller (infinite horizon, via solving ARE)
-- [ ] LQE controller (duality of LQR for estimation)
-- [ ] Sliding mode controller
-- [ ] MPC
-- [ ] Feedback Linearization (cancel out non-linear terms)
+- **LQR**: Linear Quadratic Regulator (finite horizon, via solving ARE)
+- **LQE**: Linear Quadratic Estimator (kalman filter duality of LQR)
+- **Sliding Mode**: Sliding mode controller
+- **Linear MPC**: Model Predictive Control
+- **Nonlinear MPC**: Nonlinear Model Predictive Control using single shooting method
+- **Feedback Linearization**: Feedback Linearization (cancel out non-linear terms)
+
+## TODO
+**Simulation**
