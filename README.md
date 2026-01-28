@@ -92,10 +92,10 @@ The **GNC Toolkit** is designed to support mission analysis, simulation, and fli
 - **Two-Body**: Two-body orbit propagation.
 - **Cowell**: Numerical integration of equations of motion with disturbances.
 
-## TODO
-
 ### Attitude Dynamics
-- [ ] Rigid body euler equations
+- **Rigid Body**: Euler equations for rigid body motion.
+
+## TODO
 
 ### Classical Control Algorithms
 - [ ] PID control (add anti-windup)
