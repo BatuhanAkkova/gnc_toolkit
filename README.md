@@ -46,7 +46,7 @@ from gnc_toolkit.disturbances.drag import LumpedDrag
 from gnc_toolkit.utils.quat_utils import quat_rot, quat_mult
 ```
 
-## 🔭 Examples
+## Examples
 
 The [examples/](examples/) directory contains demonstration scripts showcasing high-fidelity simulations. Key highlights:
 
