@@ -1,30 +1,12 @@
 cff-version: 1.2.0
+title: "GNC Toolkit: A Comprehensive Guidance, Navigation, and Control Toolkit for Spacecraft Simulation"
 message: "If you use this software, please cite it as below."
+type: software
 authors:
   - family-names: "Akkova"
     given-names: "Batuhan"
-    orcid: "https://orcid.org/0000-0002-1234-5678"
-title: "GNC Toolkit: A Comprehensive Guidance, Navigation, and Control Toolkit for Spacecraft Simulation"
-version: "0.1.0"
-date-released: 2026-02-05
-repository-code: "https://github.com/BatuhanAkkova/gnc-toolkit"
-license: "MIT"
-keywords:
-  - "guidance-navigation-control"
-  - "spacecraft-simulation"
-  - "attitude-determination"
-  - "attitude-dynamics"
-  - "attitude-estimation"
-  - "kalman-filter"
-  - "lambert-problem"
-  - "optimal-control"
-  - "orbit-propagation"
-  - "orbital-dynamics"
-  - "orbital-maneuvers"
-  - "pid-control"
-  - "python"
-description: "A comprehensive GNC toolkit for spacecraft simulation, mission analysis, and state estimation. Built with Python, this toolkit provides high-fidelity environment models, disturbance calculations, and advanced control/estimation algorithms."
-contact:
-  - name: "Batuhan Akkova"
     email: "batuhanakkova1@gmail.com"
-    website: "https://github.com/BatuhanAkkova"
+url: "https://github.com/BatuhanAkkova/gnc-toolkit"
+license: "MIT"
+version: "1.0.0"
+date-released: 2026-02-05
