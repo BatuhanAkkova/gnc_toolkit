@@ -1,31 +1,47 @@
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../src'))
+# Configuration file for the Sphinx documentation builder.
+
+# -- Path setup --------------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like this:
+# 
+#import os
+#import sys
+#sys.path.insert(0, os.path.abspath('../..'))
+
 
 # -- Project information -----------------------------------------------------
+project = 'Your Project Name'
+#replace with your project name
+author = 'Your Name'
+#replace with your name
 
-project = 'GNC Toolkit'
-copyright = '2024, Batuhan Akkova'
-author = 'Batuhan Akkova'
-release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
-]
+    'sphinx.ext.napoleon',
+]  
 
+# The theme to use for HTML and HTML Help pages (see Sphinx docs for all options).
+html_theme = 'sphinx_rtd_theme'
+
+# Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+# The master toctree document.
+master_doc = 'index'
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'sphinx_rtd_theme'
+# The theme to use for HTML pages.
+theme = "sphinx_rtd_theme"
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Napoleon settings
-napoleon_google_docstring = False
-napoleon_numpy_docstring = True
