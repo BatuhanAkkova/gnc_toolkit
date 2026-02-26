@@ -7,7 +7,7 @@ name = "gnc_toolkit"
 version = "0.1.0"
 description = "A Guidance, Navigation, and Control toolkit for spacecraft."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 authors = [
     { name = "Batuhan Akkova" },
 ]
