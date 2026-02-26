@@ -16,6 +16,7 @@ dist/
 
 # Documentation
 docs/_build/
+docs/api/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
